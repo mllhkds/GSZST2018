@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e3e3">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@mipmap/drawer_bg">
+        <TextView
+            android:id="@+id/drawer_tv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="#c2f3fe"
+            android:textStyle="italic"
+            android:text="May everyone be wonderful" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="10dp">
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#99bcbcbc"
+        android:layout_alignParentBottom="true">
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#55af62">
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@mipmap/transport">
+
+
+        <TextView
+            android:id="@+id/road_color_6"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="45dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:text="@string/road_tv_6"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/road_color_1"
+            android:layout_width="25dp"
+            android:layout_height="320dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/road_tv_1"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:background="#fff" />
+
+        <TextView
+            android:id="@+id/road_color_7"
+            android:layout_width="70dp"
+            android:layout_height="252dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:layout_marginTop="250dp"
+            android:text="@string/road_tv_7"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="168dp"
+            android:background="#fff"/>
+
+        <TextView
+            android:id="@+id/road_color_2"
+            android:layout_width="25dp"
+            android:layout_height="320dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/road_tv_2"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:background="#fff" />
+
+        <TextView
+            android:id="@+id/road_color_3"
+            android:layout_width="25dp"
+            android:layout_height="320dp"
+            android:layout_marginLeft="350dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:text="@string/road_tv_3"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:background="#FFF" />
+
+        <TextView
+            android:id="@+id/road_color_4"
+            android:layout_width="25dp"
+            android:layout_height="320dp"
+            android:layout_marginLeft="190dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:text="@string/road_tv_4"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:background="#FFF" />
+
+        <TextView
+            android:layout_width="325dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:background="#FFF" />
+        <TextView
+            android:id="@+id/road_color_51"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="45dp"
+            android:background="#FFF"
+            android:text="环            城             快            速            路"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/road_color_52"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FFF"
+            android:text="环            城             快            速            路"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/road_color_53"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="45dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:text="@string/road_tv_5_h"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/road_bg_style_right">
+        <ImageButton
+            android:id="@+id/road_update"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/road_update"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="#0000"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/road_tv_time"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:text="@string/road_day"
+                android:textSize="36sp"
+                android:padding="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:text="@string/road_envir_text"
+                android:textSize="24sp"
+                android:paddingTop="10dp"
+                android:gravity="right"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/road_tv_envir"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:text="@string/road_envir_number"
+                android:textSize="24sp"
+                android:paddingTop="10dp"
+                android:gravity="left"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="260dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/road_color"
+                android:textSize="28sp"
+                android:paddingLeft="10dp"
+                android:textColor="#000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="50dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/road_5"
+                        android:gravity="right"
+                        android:paddingRight="20dp"
+                        android:textColor="#000"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/road_4"
+                        android:gravity="right"
+                        android:paddingRight="20dp"
+                        android:textColor="#000"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/road_3"
+                        android:gravity="right"
+                        android:paddingRight="20dp"
+                        android:textColor="#000"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/road_2"
+                        android:gravity="right"
+                        android:paddingRight="20dp"
+                        android:textColor="#000"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/road_1"
+                        android:gravity="right"
+                        android:paddingRight="20dp"
+                        android:textColor="#000"
+                        android:textSize="20dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:layout_marginTop="7dp"
+                        android:background="#b01e23"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:background="#ddd"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:background="#e33532"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:background="#ddd"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:background="#f49b25"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:background="#ddd"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:background="#ece93a"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:background="#ddd"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:layout_marginBottom="12dp"
+                        android:background="#6ab82e"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="260dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/road_image"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

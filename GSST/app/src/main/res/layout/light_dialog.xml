@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="#adadad"
+        android:textSize="36dp"
+        android:gravity="center_vertical"
+        android:text="@string/traffic_set"
+        android:paddingLeft="20dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textColor="#000"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="@string/red_cycle"/>
+            <EditText
+                android:id="@+id/light_dialog_red"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:maxLines="1"
+                android:textSize="28sp"
+                android:textColor="#31f69e"
+                android:paddingLeft="10dp"
+                android:inputType="number"
+                android:layout_gravity="center"
+                android:background="#ececec"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/second"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textColor="#000"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="@string/yellow_cycle"/>
+            <EditText
+                android:id="@+id/light_dialog_yellow"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:maxLines="1"
+                android:textSize="28sp"
+                android:textColor="#31f69e"
+                android:paddingLeft="10dp"
+                android:inputType="number"
+                android:layout_gravity="center"
+                android:background="#ececec"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/second"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textColor="#000"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="@string/green_cycle"/>
+            <EditText
+                android:id="@+id/light_dialog_green"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:textSize="28sp"
+                android:textColor="#31f69e"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:inputType="number"
+                android:layout_gravity="center"
+                android:background="#ececec"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/second"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/light_dialog_btn_ok"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:textSize="30sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/ok"/>
+
+            <Button
+                android:id="@+id/light_dialog_btn_no"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:textSize="30sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                android:text="@string/no"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
