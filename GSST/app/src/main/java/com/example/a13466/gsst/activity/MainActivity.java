@@ -1,8 +1,16 @@
 package com.example.a13466.gsst.activity;
 
+import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.graphics.Color;
+import android.graphics.Point;
+import android.support.v4.view.MotionEventCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v4.widget.ViewDragHelper;
+import android.util.Log;
+import android.view.GestureDetector;
 import android.view.Gravity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -12,6 +20,7 @@ import com.example.a13466.gsst.adapter.MenuListAdapter;
 import com.example.a13466.gsst.been.Drawer;
 import com.example.a13466.gsst.utils.ToastUtil;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,10 +54,32 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initData() {
-        mDrawerLayout.setScrimColor(Color.argb(1,0,0,0));//抽屉拉出后主页面不遮挡（透明）
+        mDrawerLayout.setScrimColor(Color.argb(1, 0, 0, 0));//抽屉拉出后主页面不遮挡（透明）
         prepareListView();
         setListViewListener();
         setAnimationDrawer();
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        int touch = MotionEventCompat.getActionMasked(event);
+        switch (touch) {
+            case (MotionEvent.ACTION_DOWN):
+                Log.d(TAG, "Action was DOWN");
+                break;
+            case (MotionEvent.ACTION_MOVE):
+                Log.d(TAG, "Action was MOVE");
+                break;
+            case (MotionEvent.ACTION_UP):
+                Log.d(TAG, "Action was UP");
+                break;
+            case (MotionEvent.ACTION_CANCEL):
+                Log.d(TAG, "Action was CANCEL");
+                break;
+            default:
+                break;
+        }
+        return true;
     }
 
     private void setAnimationDrawer() {
@@ -67,9 +98,11 @@ public class MainActivity extends BaseActivity {
                 //这里是写打开
             }
 
+
             @Override
             public void onDrawerClosed(View drawerView) {
                 //这里关闭
+
             }
 
             @Override

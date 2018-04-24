@@ -4,7 +4,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class TimeUtil {
-    private static String[] ti = new String[]{"yyyy-MM-dd HH:mm:ss",              //1
+    private static String[] ti = new String[]{
+                               "yyyy-MM-dd HH:mm:ss",              //1
                                "yyyy.MM.dd HH:mm:ss",              //2
                                "yyyy-MM-dd \n EEE",                //3
                                "yyyy-MM-dd \n EEEE",               //4
