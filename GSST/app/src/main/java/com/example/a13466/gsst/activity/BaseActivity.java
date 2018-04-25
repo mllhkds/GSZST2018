@@ -12,6 +12,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.a13466.gsst.R;
+import com.example.a13466.gsst.utils.ToastUtil;
 
 public abstract class BaseActivity extends AppCompatActivity {
     protected TextView mTitleTV;
@@ -58,6 +59,17 @@ public abstract class BaseActivity extends AppCompatActivity {
             transaction.addToBackStack(null);
         }
         transaction.commit();
+    }
+
+    private long timesize = 0;
+    @Override
+    public void onBackPressed() {
+        if ((System.currentTimeMillis() - timesize < 2000)){
+            finish();
+        } else {
+            ToastUtil.showToast(this,"再按一次退出");
+            timesize = System.currentTimeMillis();
+        }
     }
     protected abstract void onAfter();
     protected abstract int getLayoutId();

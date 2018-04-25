@@ -60,27 +60,6 @@ public class MainActivity extends BaseActivity {
         setAnimationDrawer();
     }
 
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        int touch = MotionEventCompat.getActionMasked(event);
-        switch (touch) {
-            case (MotionEvent.ACTION_DOWN):
-                Log.d(TAG, "Action was DOWN");
-                break;
-            case (MotionEvent.ACTION_MOVE):
-                Log.d(TAG, "Action was MOVE");
-                break;
-            case (MotionEvent.ACTION_UP):
-                Log.d(TAG, "Action was UP");
-                break;
-            case (MotionEvent.ACTION_CANCEL):
-                Log.d(TAG, "Action was CANCEL");
-                break;
-            default:
-                break;
-        }
-        return true;
-    }
 
     private void setAnimationDrawer() {
         mDrawerLayout.addDrawerListener(new DrawerLayout.DrawerListener() {
@@ -112,16 +91,7 @@ public class MainActivity extends BaseActivity {
         });
     }
 
-    private long timesize = 0;
-    @Override
-    public void onBackPressed() {
-        if ((System.currentTimeMillis() - timesize < 2000)){
-            finish();
-        } else {
-            ToastUtil.showToast(this,"再按一次退出");
-            timesize = System.currentTimeMillis();
-        }
-    }
+
 
     private void prepareListView() {
         String[] contents = getResources().getStringArray(R.array.menu_content);

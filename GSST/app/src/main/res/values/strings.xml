@@ -8,6 +8,7 @@
     <string name="charge">充值</string>
     <string name="cancel">取消</string>
     <string name="login">用户登录</string>
+    <string name="reginster">用户注册</string>
     <string name="intersection">路口</string>
     <string name="sorting">排序:</string>
     <string name="fur_query">批量设置</string>
@@ -24,6 +25,7 @@
     <string name="second">秒</string>
     <string name="ok">确定</string>
     <string name="no">取消</string>
+    <string name="reok">注册</string>
     <string name="road_query">路况查询</string>
     <string name="road_day">%1$s \n %2$s </string>
     <string name="road_envir_number">%1$d ℃\n\n%2$d %%\n\n%3$d μg/m³</string>

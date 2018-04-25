@@ -29,7 +29,6 @@ public abstract class BaseFragment extends Fragment {
         View view = inflater.inflate(getLayoutId(), null);
         getBaseContent();
         initView(view);
-        Log.d(TAG, "onCreateView: 123");
         return view;
     }
 
